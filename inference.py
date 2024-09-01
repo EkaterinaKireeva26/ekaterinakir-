@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # функция для генерации выборок для обучения
-def create_sequences(values, time_steps=N_STEPS):
+def create_sequences(values, time_steps):
     output = []
     for i in range(len(values) - time_steps + 1):
         output.append(values[i : (i + time_steps)])
